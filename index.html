@@ -1,0 +1,288 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+  .bmk-wrapper * {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .bmk-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 12px;
+    background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 100%);
+    border-radius: 24px;
+    color: #0f172a;
+  }
+
+  .bmk-header {
+    text-align: center;
+    padding: 16px 8px 12px;
+  }
+  .bmk-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0284c7;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .bmk-banner-text {
+    background: #0284c7;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  }
+
+  .bmk-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .bmk-card {
+    background: #ffffff;
+    border: 2px solid #38bdf8;
+    border-radius: 40px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  }
+  .bmk-card-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .bmk-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .ic-blue { background: #38bdf8; color: #fff; }
+  .ic-green { background: #22c55e; color: #fff; }
+  .ic-yellow { background: #eab308; color: #fff; }
+  .ic-purple { background: #6366f1; color: #fff; }
+  .ic-sky { background: #0ea5e9; color: #fff; }
+
+  .bmk-details h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .bmk-details p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: #64748b;
+  }
+  .bmk-badge {
+    background: #facc15;
+    color: #0f172a;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-left: 6px;
+    display: inline-block;
+  }
+  .bmk-arrow {
+    color: #0284c7;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .bmk-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+  .bmk-stat-item {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 12px 6px;
+    text-align: center;
+    border: 1px solid #bae6fd;
+  }
+  .bmk-stat-item h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0284c7;
+  }
+  .bmk-stat-item p {
+    margin: 2px 0 0;
+    font-size: 10px;
+    color: #64748b;
+    font-weight: 600;
+  }
+
+  .bmk-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 18px;
+    margin-top: 12px;
+    border: 2px solid #bae6fd;
+  }
+  .bmk-box h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .bmk-box p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 10px;
+  }
+
+  .bmk-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .genre-pill {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+
+  .bmk-features {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+  }
+  .bmk-features li {
+    font-size: 12px;
+    color: #334155;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="bmk-wrapper">
+  <div class="bmk-header">
+    <div class="bmk-logo">BACAMANHWAKOMIK</div>
+    <div class="bmk-banner-text">Pusat Baca Manhwa & Komik Indo Terlengkap! 📖</div>
+  </div>
+
+  <div class="bmk-card-list">
+    <a href="#" class="bmk-card">
+      <div class="bmk-card-left">
+        <div class="bmk-icon ic-blue">📖</div>
+        <div class="bmk-details">
+          <h4>Jelajahi Katalog <span class="bmk-badge">🔥 Hot</span></h4>
+          <p>Ribuan judul manhwa, manga & manhua gratis</p>
+        </div>
+      </div>
+      <div class="bmk-arrow">&rsaquo;</div>
+    </a>
+
+    <a href="#" class="bmk-card">
+      <div class="bmk-card-left">
+        <div class="bmk-icon ic-green">🔗</div>
+        <div class="bmk-details">
+          <h4>Cek Domain Aktif <span class="bmk-badge">🔄 Status</span></h4>
+          <p>Link cadangan jika situs tidak bisa dibuka</p>
+        </div>
+      </div>
+      <div class="bmk-arrow">&rsaquo;</div>
+    </a>
+
+    <a href="#" class="bmk-card">
+      <div class="bmk-card-left">
+        <div class="bmk-icon ic-yellow">⚡</div>
+        <div class="bmk-details">
+          <h4>Langganan VIP</h4>
+          <p>Akses cepat tanpa iklan & fitur eksklusif</p>
+        </div>
+      </div>
+      <div class="bmk-arrow">&rsaquo;</div>
+    </a>
+
+    <a href="#" class="bmk-card">
+      <div class="bmk-card-left">
+        <div class="bmk-icon ic-purple">💬</div>
+        <div class="bmk-details">
+          <h4>Komunitas Discord</h4>
+          <p>Tempat nongkrong & info update terbaru</p>
+        </div>
+      </div>
+      <div class="bmk-arrow">&rsaquo;</div>
+    </a>
+
+    <a href="#" class="bmk-card">
+      <div class="bmk-card-left">
+        <div class="bmk-icon ic-sky">📱</div>
+        <div class="bmk-details">
+          <h4>Unduh Aplikasi</h4>
+          <p>Pengalaman baca lebih stabil di Android/iOS</p>
+        </div>
+      </div>
+      <div class="bmk-arrow">&rsaquo;</div>
+    </a>
+  </div>
+
+  <div class="bmk-stats-grid">
+    <div class="bmk-stat-item">
+      <h3>10.000+</h3>
+      <p>Judul Komik</p>
+    </div>
+    <div class="bmk-stat-item">
+      <h3>250K+</h3>
+      <p>Chapter Indo</p>
+    </div>
+    <div class="bmk-stat-item">
+      <h3>24/7</h3>
+      <p>Update Harian</p>
+    </div>
+  </div>
+
+  <div class="bmk-box">
+    <h3>Apa itu BACAMANHWAKOMIK? 🇲🇨</h3>
+    <p><b>BACAMANHWAKOMIK</b> adalah portal utama penyedia layanan baca komik digital berbahasa Indonesia secara gratis. Kami menghadirkan koleksi lengkap komik Korea (manhwa), Jepang (manga), dan China (manhua) dengan terjemahan yang pas dan nyaman dibaca.</p>
+    <p>Nikmati kemudahan membaca dengan navigasi simpel, loading gambar yang cepat, dan chapter yang selalu diperbarui setiap harinya.</p>
+  </div>
+
+  <div class="bmk-box">
+    <h3>Jelajahi Genre 🔍</h3>
+    <p>Pilih genre favoritmu untuk langsung membaca:</p>
+    <div class="bmk-genres">
+      <span class="genre-pill">Action</span>
+      <span class="genre-pill">Fantasy</span>
+      <span class="genre-pill">Romance</span>
+      <span class="genre-pill">Martial Arts</span>
+      <span class="genre-pill">Isekai</span>
+      <span class="genre-pill">Slice of Life</span>
+      <span class="genre-pill">School Life</span>
+      <span class="genre-pill">Drama</span>
+    </div>
+  </div>
+
+  <div class="bmk-box">
+    <h3>Kenapa Memilih Kami? 🚀</h3>
+    <ul class="bmk-features">
+      <li>📚 <b>Koleksi Terlengkap:</b> Ribuan judul dari berbagai genre hits tersedia gratis.</li>
+      <li>⚡ <b>Server Cepat:</b> Baca tanpa lag dan hemat penggunaan kuota internet.</li>
+      <li>🔖 <b>Fitur Bookmark:</b> Simpan komik favorit agar tidak lupa chapter terakhir.</li>
+    </ul>
+  </div>
+</div>
